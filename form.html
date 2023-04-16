@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+  
+
+      <h1 class="nav">
+       
+        <ul class="home">
+          <li class="brand"><img src="logo.png" alt="Learn with FuN" height="50px" width="50px" style="border-radius: 50%; padding-bottom: 5px;">
+         <li> <span class="edu">Learn</span>
+          <span class="ca">with</span></li>
+          <span class="edu">Fun</span></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    </h1>
+ 
+    
+      <div class="section">
+        <div class="container">
+          <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+              <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                      <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                      <label for="reg-log"></label>
+                <div class="card-3d-wrap mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3">Log In</h4>
+                          <div class="form-group">
+                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                            <i class="input-icon uil uil-at"></i>
+                          </div>	
+                          <div class="form-group mt-2">
+                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          
+                          <a href="#" class="btn mt-4" disabled="disabled">submit</a>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                            </div>
+                          </div>
+                        </div>
+                    <div class="card-back">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3">Sign Up</h4>
+                          <div class="form-group">
+                            <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                            <i class="input-icon uil uil-user"></i>
+                          </div>	
+                          <div class="form-group mt-2">
+                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                            <i class="input-icon uil uil-at"></i>
+                          </div>	
+                          <div class="form-group mt-2">
+                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+              
+                            
+                  
+                          </div>
+                          <div>
+                          <input type="checkbox" id="accept">
+                          <a href="#" class="btn mt-4" disabled="disabled">submit</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <footer>Copyright @2023 Ishita - Prateek. All Rights Reserved</footer>
+
+        <script>
+        // jQuery
+         $(document).ready(function(){
+          $('#exampleCheck1').click(function(){
+            if($('#submit').is(':disabled')){
+              $('#submit').removeAttr('disabled')
+            }else{
+              $('#submit').attr('disabled', 'disabled');
+            }
+          });
+         });
+      </script>
+      
+</body>
+</html>
